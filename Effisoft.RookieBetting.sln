@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effisoft.RookieBetting.Common", "Effisoft.RookieBetting.Common\Effisoft.RookieBetting.Common.csproj", "{EB1A9B85-511C-4F21-BC47-3FEA42F27A3D}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Effisoft.RookieBetting.Database", "Effisoft.RookieBetting.Database\Effisoft.RookieBetting.Database.sqlproj", "{95B2341A-E6C3-41C3-A333-E17ADFBADF08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effisoft.RookieBetting.Infrastructure", "Effisoft.RookieBetting.Infrastructure\Effisoft.RookieBetting.Infrastructure.csproj", "{351E5CF0-2B0F-4821-B27E-CD465E9536EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effisoft.RookieBetting.Services", "Effisoft.RookieBetting.Services\Effisoft.RookieBetting.Services.csproj", "{FEE25732-A322-42D9-9B73-76BB888AA53F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effisoft.RookieBetting.SqlDataAccess", "Effisoft.RookieBetting.SqlDataAccess\Effisoft.RookieBetting.SqlDataAccess.csproj", "{DBF30F6E-6729-4299-860A-582B119B21E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB1A9B85-511C-4F21-BC47-3FEA42F27A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB1A9B85-511C-4F21-BC47-3FEA42F27A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB1A9B85-511C-4F21-BC47-3FEA42F27A3D}.Debug|x86.ActiveCfg = Debug|x86
+		{EB1A9B85-511C-4F21-BC47-3FEA42F27A3D}.Debug|x86.Build.0 = Debug|x86
+		{EB1A9B85-511C-4F21-BC47-3FEA42F27A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB1A9B85-511C-4F21-BC47-3FEA42F27A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB1A9B85-511C-4F21-BC47-3FEA42F27A3D}.Release|x86.ActiveCfg = Release|x86
+		{EB1A9B85-511C-4F21-BC47-3FEA42F27A3D}.Release|x86.Build.0 = Release|x86
+		{95B2341A-E6C3-41C3-A333-E17ADFBADF08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95B2341A-E6C3-41C3-A333-E17ADFBADF08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95B2341A-E6C3-41C3-A333-E17ADFBADF08}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{95B2341A-E6C3-41C3-A333-E17ADFBADF08}.Debug|x86.ActiveCfg = Debug|x86
+		{95B2341A-E6C3-41C3-A333-E17ADFBADF08}.Debug|x86.Build.0 = Debug|x86
+		{95B2341A-E6C3-41C3-A333-E17ADFBADF08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95B2341A-E6C3-41C3-A333-E17ADFBADF08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95B2341A-E6C3-41C3-A333-E17ADFBADF08}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{95B2341A-E6C3-41C3-A333-E17ADFBADF08}.Release|x86.ActiveCfg = Release|x86
+		{95B2341A-E6C3-41C3-A333-E17ADFBADF08}.Release|x86.Build.0 = Release|x86
+		{95B2341A-E6C3-41C3-A333-E17ADFBADF08}.Release|x86.Deploy.0 = Release|x86
+		{351E5CF0-2B0F-4821-B27E-CD465E9536EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351E5CF0-2B0F-4821-B27E-CD465E9536EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351E5CF0-2B0F-4821-B27E-CD465E9536EE}.Debug|x86.ActiveCfg = Debug|x86
+		{351E5CF0-2B0F-4821-B27E-CD465E9536EE}.Debug|x86.Build.0 = Debug|x86
+		{351E5CF0-2B0F-4821-B27E-CD465E9536EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351E5CF0-2B0F-4821-B27E-CD465E9536EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{351E5CF0-2B0F-4821-B27E-CD465E9536EE}.Release|x86.ActiveCfg = Release|x86
+		{351E5CF0-2B0F-4821-B27E-CD465E9536EE}.Release|x86.Build.0 = Release|x86
+		{FEE25732-A322-42D9-9B73-76BB888AA53F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE25732-A322-42D9-9B73-76BB888AA53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE25732-A322-42D9-9B73-76BB888AA53F}.Debug|x86.ActiveCfg = Debug|x86
+		{FEE25732-A322-42D9-9B73-76BB888AA53F}.Debug|x86.Build.0 = Debug|x86
+		{FEE25732-A322-42D9-9B73-76BB888AA53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE25732-A322-42D9-9B73-76BB888AA53F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE25732-A322-42D9-9B73-76BB888AA53F}.Release|x86.ActiveCfg = Release|x86
+		{FEE25732-A322-42D9-9B73-76BB888AA53F}.Release|x86.Build.0 = Release|x86
+		{DBF30F6E-6729-4299-860A-582B119B21E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF30F6E-6729-4299-860A-582B119B21E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF30F6E-6729-4299-860A-582B119B21E0}.Debug|x86.ActiveCfg = Debug|x86
+		{DBF30F6E-6729-4299-860A-582B119B21E0}.Debug|x86.Build.0 = Debug|x86
+		{DBF30F6E-6729-4299-860A-582B119B21E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF30F6E-6729-4299-860A-582B119B21E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBF30F6E-6729-4299-860A-582B119B21E0}.Release|x86.ActiveCfg = Release|x86
+		{DBF30F6E-6729-4299-860A-582B119B21E0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

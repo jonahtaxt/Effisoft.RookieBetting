@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Role] (
+    [RoleId] SMALLINT     IDENTITY (1, 1) NOT NULL,
+    [Name]   VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_Role] PRIMARY KEY CLUSTERED ([RoleId] ASC),
+    CONSTRAINT [UQ_Role_Name] UNIQUE NONCLUSTERED ([Name] ASC)
+);
