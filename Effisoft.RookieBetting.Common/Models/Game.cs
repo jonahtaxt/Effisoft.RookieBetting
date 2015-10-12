@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Effisoft.RookieBetting.Common.Models
 {
@@ -10,9 +6,14 @@ namespace Effisoft.RookieBetting.Common.Models
     {
         public int GameId { get; set; }
         public DateTime GameDate { get; set; }
+        public int Week { get; set; }
         public int HomeTeamId { get; set; }
+        public Team HomeTeam { get; set; }
+        public int HomeScore { get; set; }
         public int AwayTeamId { get; set; }
-        public int ScheduleId { get; set; }
+        public Team AwayTeam { get; set; }
+        public int AwayScore { get; set; }
+        public int Season { get; set; }
         public bool MondayNight { get; set; }
     }
 }

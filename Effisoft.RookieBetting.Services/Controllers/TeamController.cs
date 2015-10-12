@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Collections.Generic;
 using System.Web.Http;
 using Effisoft.RookieBetting.Common.Models;
+using Effisoft.RookieBetting.Common.ViewModel;
 using Effisoft.RookieBetting.Infrastructure.Repository;
 
 namespace Effisoft.RookieBetting.Services.Controllers
@@ -59,6 +56,18 @@ namespace Effisoft.RookieBetting.Services.Controllers
         public Team GetTeam(string teamName)
         {
             return _teamRepository.GetTeam(teamName);
+        }
+
+        [Route("Stats")]
+        public TeamStats GetTeamStats(int teamId)
+        {
+            return _teamRepository.GetTeamStats(teamId);
+        }
+
+        [Route("Stats")]
+        public TeamStats GetTeamStats(string teamName)
+        {
+            return _teamRepository.GetTeamStats(teamName);
         }
     }
 }

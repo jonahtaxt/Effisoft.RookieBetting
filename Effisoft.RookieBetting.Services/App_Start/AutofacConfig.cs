@@ -24,6 +24,7 @@ namespace Effisoft.RookieBetting.Services
             builder.RegisterType<ConferenceRepository>().As<IConferenceRepository>();
             builder.RegisterType<DivisionRepository>().As<IDivisionRepository>();
             builder.RegisterType<TeamRepository>().As<ITeamRepository>();
+            builder.RegisterType<GameRepository>().As<IGameRepository>();
 
             var container = builder.Build();
 

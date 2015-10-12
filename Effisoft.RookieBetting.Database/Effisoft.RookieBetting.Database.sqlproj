@@ -88,12 +88,13 @@
     <Folder Include="StoredProcedures\Conference" />
     <Folder Include="StoredProcedures\Division" />
     <Folder Include="StoredProcedures\Team" />
+    <Folder Include="StoredProcedures\Game" />
+    <Folder Include="Views" />
+    <Folder Include="StoredProcedures\GameBet" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Conference.sql" />
     <Build Include="Tables\Division.sql" />
-    <Build Include="Tables\Team.sql" />
-    <Build Include="Tables\Schedule.sql" />
     <Build Include="Tables\Game.sql" />
     <Build Include="Tables\GameBet.sql" />
     <Build Include="Tables\User.sql" />
@@ -112,6 +113,17 @@
     <Build Include="StoredProcedures\Team\GetTeamById.sql" />
     <Build Include="StoredProcedures\Team\GetTeamByName.sql" />
     <Build Include="StoredProcedures\Conference\GetConferenceById.sql" />
+    <Build Include="StoredProcedures\Game\GetGames.sql" />
+    <Build Include="StoredProcedures\Game\AddGame.sql" />
+    <Build Include="Tables\Team.sql" />
+    <Build Include="StoredProcedures\Game\UpdateGame.sql" />
+    <Build Include="StoredProcedures\Game\DeleteGame.sql" />
+    <Build Include="Views\vStats.sql" />
+    <Build Include="StoredProcedures\Team\GetTeamStatsByTeamId.sql" />
+    <Build Include="StoredProcedures\Team\GetTeamStatsByTeamName.sql" />
+    <Build Include="StoredProcedures\Game\GetGame.sql" />
+    <Build Include="StoredProcedures\GameBet\AddGameBet.sql" />
+    <Build Include="StoredProcedures\GameBet\UpdateGameBet.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Effisoft.RookieBetting.Database.refactorlog" />

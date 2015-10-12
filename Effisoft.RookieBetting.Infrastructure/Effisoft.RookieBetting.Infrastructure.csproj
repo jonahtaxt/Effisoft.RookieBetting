@@ -63,6 +63,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IConferenceRepository.cs" />
     <Compile Include="Repository\IDivisionRepository.cs" />
+    <Compile Include="Repository\IGameBetRepository.cs" />
+    <Compile Include="Repository\IGameRepository.cs" />
     <Compile Include="Repository\ITeamRepository.cs" />
   </ItemGroup>
   <ItemGroup>

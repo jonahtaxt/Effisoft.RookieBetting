@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Effisoft.RookieBetting.Common.Models;
+using Effisoft.RookieBetting.Common.ViewModel;
 
 namespace Effisoft.RookieBetting.Infrastructure.Repository
 {
@@ -12,5 +13,7 @@ namespace Effisoft.RookieBetting.Infrastructure.Repository
         List<Team> GetTeamsByDivision(string divisionName);
         Team GetTeam(int teamId);
         Team GetTeam(string teamName);
+        TeamStats GetTeamStats(int teamId);
+        TeamStats GetTeamStats(string teamName);
     }
 }

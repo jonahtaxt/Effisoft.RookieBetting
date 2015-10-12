@@ -54,7 +54,7 @@ INSERT INTO dbo.Team (TeamId, TeamName, DivisionId, TeamLogoUrl, TeamCode) VALUE
 SET @TeamId = @TeamId + 1
 INSERT INTO dbo.Team (TeamId, TeamName, DivisionId, TeamLogoUrl, TeamCode) VALUES (@TeamId, 'Oakland Raiders', @DivisionId, 'OAK.png', 'OAK') 
 SET @TeamId = @TeamId + 1
-INSERT INTO dbo.Team (TeamId, TeamName, DivisionId, TeamLogoUrl, TeamCode) VALUES (@TeamId, 'San Die Chargers', @DivisionId, 'SD.png', 'SD') 
+INSERT INTO dbo.Team (TeamId, TeamName, DivisionId, TeamLogoUrl, TeamCode) VALUES (@TeamId, 'San Diego Chargers', @DivisionId, 'SD.png', 'SD') 
 SET @TeamId = @TeamId + 1
 INSERT INTO dbo.Team (TeamId, TeamName, DivisionId, TeamLogoUrl, TeamCode) VALUES (@TeamId, 'Kansas City Chiefs', @DivisionId, 'KC.png', 'KC') 
 SET @TeamId = @TeamId + 1
@@ -76,7 +76,7 @@ INSERT INTO dbo.Team (TeamId, TeamName, DivisionId, TeamLogoUrl, TeamCode) VALUE
 SET @TeamId = @TeamId + 1
 INSERT INTO dbo.Team (TeamId, TeamName, DivisionId, TeamLogoUrl, TeamCode) VALUES (@TeamId, 'Minnesota Vikings', @DivisionId, 'MIN.png', 'MIN') 
 SET @TeamId = @TeamId + 1
-INSERT INTO dbo.Team (TeamId, TeamName, DivisionId, TeamLogoUrl, TeamCode) VALUES (@TeamId, 'Chica Bears', @DivisionId, 'CHI.png', 'CHI') 
+INSERT INTO dbo.Team (TeamId, TeamName, DivisionId, TeamLogoUrl, TeamCode) VALUES (@TeamId, 'Chicago Bears', @DivisionId, 'CHI.png', 'CHI') 
 SET @TeamId = @TeamId + 1
 INSERT INTO dbo.Team (TeamId, TeamName, DivisionId, TeamLogoUrl, TeamCode) VALUES (@TeamId, 'Detroit Lions', @DivisionId, 'DET.png', 'DET') 
 SET @TeamId = @TeamId + 1

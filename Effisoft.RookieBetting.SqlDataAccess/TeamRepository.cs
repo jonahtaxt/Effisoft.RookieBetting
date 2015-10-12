@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Effisoft.RookieBetting.Common.Models;
+using Effisoft.RookieBetting.Common.ViewModel;
 using Effisoft.RookieBetting.Infrastructure.Database;
 using Effisoft.RookieBetting.Infrastructure.Repository;
 
@@ -68,6 +69,18 @@ namespace Effisoft.RookieBetting.SqlDataAccess
             var team = DatabaseContext.ExecuteProcedure<Team>("GetTeamByName", new { TeamName = teamName });
             team.Division = _divisionRepository.GetDivisionById(team.DivisionId);
             return team;
+        }
+
+        public TeamStats GetTeamStats(int teamId)
+        {
+            return DatabaseContext.ExecuteQuery<TeamStats>("SELECT * FROM dbo.vStats WHERE TeamId = @TeamId",
+                new { TeamId = teamId });
+        }
+
+        public TeamStats GetTeamStats(string teamName)
+        {
+            return DatabaseContext.ExecuteQuery<TeamStats>("SELECT * FROM dbo.vStats WHERE TeamName = @TeamName",
+                new { TeamName = teamName });
         }
     }
 }
