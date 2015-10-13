@@ -16,6 +16,7 @@ namespace Effisoft.RookieBetting.Services.Controllers
         }
 
         [Route("")]
+        [Authorize]
         public IEnumerable<Game> GetGames()
         {
             return _gameRepository.GetGames();

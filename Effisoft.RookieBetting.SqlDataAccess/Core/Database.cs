@@ -60,9 +60,6 @@ namespace Effisoft.RookieBetting.SqlDataAccess.Core
             ExecuteCommand(text, CommandType.StoredProcedure, parameters);
         }
 
-        /// <summary>
-        ///     Uso: ExecuteProcedure("SELECT * FROM ..", new { parametro1 = "", parametro2 = 123 });
-        /// </summary>
         public TResult ExecuteProcedure<TResult>(string text, object parameters, bool isDeepEntity = false)
         {
             Dictionary<string, object> parametersAsDictionary = null;
@@ -74,9 +71,6 @@ namespace Effisoft.RookieBetting.SqlDataAccess.Core
             return result;
         }
 
-        /// <summary>
-        ///     Uso: ExecuteProcedure("SELECT * FROM ..", new { parametro1 = "", parametro2 = 123 });
-        /// </summary>
         public void ExecuteProcedure(string text, object parameters)
         {
             Dictionary<string, object> parametersAsDictionary = null;
@@ -338,22 +332,6 @@ namespace Effisoft.RookieBetting.SqlDataAccess.Core
 
             return isFrameworkType;
         }
-
-        //object ReadResultAsEntity(IDataReader reader, Type entityType)
-        //{
-        //    var entity = Activator.CreateInstance(entityType);
-        //    foreach (var pInfo in GetPropertiesFromType(entityType).Where(p => p.CanWrite))
-        //    {
-        //        var fieldOrdinal = reader.GetOrdinal(pInfo.Name);
-        //        if (fieldOrdinal < 0)
-        //            throw new ArgumentException("El campo " + pInfo.Name + " no se encuentra en el Reader.");
-
-        //        var fieldValue = ReadValueFromDbReader(reader, fieldOrdinal);
-        //        var dotNetTypeValue = fieldValue is System.DBNull ? null : fieldValue;
-        //        pInfo.SetValue(entity, dotNetTypeValue, null);
-        //    }
-        //    return entity;
-        //}
 
         private object ReadResultAsEntity(IDataReader reader, Type entityType)
         {

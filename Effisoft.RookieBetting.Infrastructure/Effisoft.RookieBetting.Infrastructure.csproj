@@ -66,6 +66,7 @@
     <Compile Include="Repository\IGameBetRepository.cs" />
     <Compile Include="Repository\IGameRepository.cs" />
     <Compile Include="Repository\ITeamRepository.cs" />
+    <Compile Include="Repository\Security\IRoleRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Effisoft.RookieBetting.Common\Effisoft.RookieBetting.Common.csproj">

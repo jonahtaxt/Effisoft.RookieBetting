@@ -48,6 +48,10 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,6 +69,7 @@
     <Compile Include="DivisionRepository.cs" />
     <Compile Include="GameRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\UserRepository.cs" />
     <Compile Include="TeamRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +81,14 @@
       <Project>{351e5cf0-2b0f-4821-b27e-cd465e9536ee}</Project>
       <Name>Effisoft.RookieBetting.Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Effisoft.RookieBetting.Security\Effisoft.RookieBetting.Security.csproj">
+      <Project>{d870b141-55ad-45db-9a9b-047562487c2b}</Project>
+      <Name>Effisoft.RookieBetting.Security</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

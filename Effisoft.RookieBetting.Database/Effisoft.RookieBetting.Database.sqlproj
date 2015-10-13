@@ -91,6 +91,8 @@
     <Folder Include="StoredProcedures\Game" />
     <Folder Include="Views" />
     <Folder Include="StoredProcedures\GameBet" />
+    <Folder Include="StoredProcedures\User" />
+    <Folder Include="StoredProcedures\Role" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Conference.sql" />
@@ -124,6 +126,13 @@
     <Build Include="StoredProcedures\Game\GetGame.sql" />
     <Build Include="StoredProcedures\GameBet\AddGameBet.sql" />
     <Build Include="StoredProcedures\GameBet\UpdateGameBet.sql" />
+    <Build Include="StoredProcedures\User\AddUser.sql" />
+    <Build Include="StoredProcedures\User\GetUserById.sql" />
+    <Build Include="StoredProcedures\User\GetUsers.sql" />
+    <Build Include="StoredProcedures\User\UpdateUser.sql" />
+    <Build Include="StoredProcedures\User\GetUserByName.sql" />
+    <Build Include="StoredProcedures\Role\GetRoles.sql" />
+    <Build Include="StoredProcedures\Role\GetRoleByUser.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Effisoft.RookieBetting.Database.refactorlog" />

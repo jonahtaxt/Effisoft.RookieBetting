@@ -1,5 +1,7 @@
 ﻿using Owin;
 using System.Web.Http;
+using Effisoft.RookieBetting.Security.Helpers;
+using Effisoft.RookieBetting.Security.Infrastructure;
 
 namespace Effisoft.RookieBetting.Services
 {
@@ -8,9 +10,11 @@ namespace Effisoft.RookieBetting.Services
         public void Configuration(IAppBuilder app)
         {
             var config = new HttpConfiguration();
+            ConfigureOAuth(app, config);
             WebApiConfig.Register(config);
-            AutofacConfig.RegisterDependencies(app, config);
+            app.UseAutofacWebApi(config);
             app.UseWebApi(config);
+            AutofacConfig.RegisterDependencies(app, config);
         }
     }
 }
