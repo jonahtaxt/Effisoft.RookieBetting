@@ -65,5 +65,13 @@ namespace Effisoft.RookieBetting.SqlDataAccess
                 game.MondayNight
             });
         }
+
+        public void DeleteGame(int gameId)
+        {
+            DatabaseContext.ExecuteProcedure("DeleteGame",new
+            {
+                GameId = gameId
+            });
+        }
     }
 }

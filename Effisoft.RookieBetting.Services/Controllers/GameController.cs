@@ -16,17 +16,33 @@ namespace Effisoft.RookieBetting.Services.Controllers
         }
 
         [Route("")]
-        [Authorize]
         public IEnumerable<Game> GetGames()
         {
             return _gameRepository.GetGames();
         }
 
-        [Route("")]
+        [Route("add")]
+        [Authorize(Roles = "Administrator")]
         [HttpPost]
         public void AddGame(Game game)
         {
             _gameRepository.AddGame(game);
+        }
+
+        [Route("update")]
+        [Authorize(Roles = "Administrator")]
+        [HttpPost]
+        public void UpdateGame(Game game)
+        {
+            _gameRepository.UpdateGame(game);
+        }
+
+        [Route("delete")]
+        [Authorize(Roles = "Administrator")]
+        [HttpPost]
+        public void Delete(int gameId)
+        {
+            _gameRepository.DeleteGame(gameId);
         }
     }
 }

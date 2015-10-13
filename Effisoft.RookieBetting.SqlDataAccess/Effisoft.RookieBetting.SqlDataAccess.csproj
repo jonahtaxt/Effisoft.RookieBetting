@@ -67,6 +67,7 @@
     <Compile Include="Core\Database.cs" />
     <Compile Include="Core\DatabaseFactory.cs" />
     <Compile Include="DivisionRepository.cs" />
+    <Compile Include="GameBetRepository.cs" />
     <Compile Include="GameRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\UserRepository.cs" />

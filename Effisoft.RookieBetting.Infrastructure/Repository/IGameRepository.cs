@@ -10,5 +10,6 @@ namespace Effisoft.RookieBetting.Infrastructure.Repository
         Game GetGame(DateTime gameDate, string homeTeam, string awayTeam);
         void AddGame(Game game);
         void UpdateGame(Game game);
+        void DeleteGame(int gameId);
     }
 }

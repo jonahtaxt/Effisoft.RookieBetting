@@ -156,6 +156,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ConferenceController.cs" />
     <Compile Include="Controllers\DivisionController.cs" />
+    <Compile Include="Controllers\GameBetController.cs" />
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
