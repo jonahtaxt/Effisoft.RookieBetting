@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effisoft.RookieBetting.NflL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effisoft.RookieBetting.Security", "Effisoft.RookieBetting.Security\Effisoft.RookieBetting.Security.csproj", "{D870B141-55AD-45DB-9A9B-047562487C2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effisoft.RookieBetting.Web", "Effisoft.RookieBetting.Web\Effisoft.RookieBetting.Web.csproj", "{51EA9124-7366-424D-9D70-0A4AE134B1D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,6 +86,14 @@ Global
 		{D870B141-55AD-45DB-9A9B-047562487C2B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D870B141-55AD-45DB-9A9B-047562487C2B}.Release|x86.ActiveCfg = Release|Any CPU
 		{D870B141-55AD-45DB-9A9B-047562487C2B}.Release|x86.Build.0 = Release|Any CPU
+		{51EA9124-7366-424D-9D70-0A4AE134B1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51EA9124-7366-424D-9D70-0A4AE134B1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51EA9124-7366-424D-9D70-0A4AE134B1D2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{51EA9124-7366-424D-9D70-0A4AE134B1D2}.Debug|x86.Build.0 = Debug|Any CPU
+		{51EA9124-7366-424D-9D70-0A4AE134B1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51EA9124-7366-424D-9D70-0A4AE134B1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51EA9124-7366-424D-9D70-0A4AE134B1D2}.Release|x86.ActiveCfg = Release|Any CPU
+		{51EA9124-7366-424D-9D70-0A4AE134B1D2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

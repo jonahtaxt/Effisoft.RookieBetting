@@ -1,0 +1,99 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid.header {
+    padding: 0 !important;
+}
+
+.page-header {
+    background-image: url("../Content/images/footballfield.jpg");
+    background-repeat: no-repeat;
+    padding-left: 0 !important;
+    padding-top: 1px !important;
+    margin-top: 0;
+}
+
+    .page-header h1 > img {
+        transform: scale(0.75, 0.75);
+        -ms-transform: scale(0.75, 0.75);
+        -webkit-transform: scale(0.75, 0.75);
+    }
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+
+#login {
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow: hidden;
+    background-color: rgba(255,255,255,.8);
+}
+
+    #login .help-block {
+        font-size: 12px;
+    }
+
+    #login .bottom {
+        background-color: rgba(255,255,255,.8);
+        border-top: 1px solid #ddd;
+        clear: both;
+        padding: 14px;
+    }
+
+    #login .social-buttons {
+        margin: 12px 0;
+    }
+
+        #login .social-buttons a {
+            width: 49%;
+        }
+
+    #login .form-group {
+        margin-bottom: 10px;
+    }
+
+.btn-fb {
+    color: #fff;
+    background-color: #3b5998;
+}
+
+    .btn-fb:hover {
+        color: #fff;
+        background-color: #496ebc;
+    }
+
+.btn-tw {
+    color: #fff;
+    background-color: #55acee;
+}
+
+    .btn-tw:hover {
+        color: #fff;
+        background-color: #59b5fa;
+    }
+
+@media(max-width:768px) {
+    #login {
+        background-color: inherit;
+        color: #fff;
+    }
+
+        #login .bottom {
+            background-color: inherit;
+            border-top: 0 none;
+        }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+}

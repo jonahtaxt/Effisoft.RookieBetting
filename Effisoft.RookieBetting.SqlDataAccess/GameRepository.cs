@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Effisoft.RookieBetting.Common.Models;
+using Effisoft.RookieBetting.Common.ViewModel;
 using Effisoft.RookieBetting.Infrastructure.Database;
 using Effisoft.RookieBetting.Infrastructure.Repository;
 
@@ -71,6 +72,27 @@ namespace Effisoft.RookieBetting.SqlDataAccess
             DatabaseContext.ExecuteProcedure("DeleteGame",new
             {
                 GameId = gameId
+            });
+        }
+
+        public List<SeasonWeek> GetGameWeeks(int season)
+        {
+            return DatabaseContext.ExecuteProcedure<List<SeasonWeek>>("GetGameWeeks", new
+            {
+                Season = season == 0 ? DateTime.Now.Year : season
+            });
+        }
+
+        public List<SeasonWeek> GetAvailableSeasons()
+        {
+            return DatabaseContext.ExecuteProcedure<List<SeasonWeek>>("GetAvailableSeasons");
+        }
+
+        public List<GameResult> GetGameResultsByWeek(int week)
+        {
+            return DatabaseContext.ExecuteProcedure<List<GameResult>>("GetGameResultsByWeek", new
+            {
+                Week = week
             });
         }
     }

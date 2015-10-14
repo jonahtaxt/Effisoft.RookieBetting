@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="appRookieBetting">
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @RenderSection("styles", false)
+</head>
+<body>
+<div ng-controller="homeController">
+    <div class="container-fluid header">
+        <div class="page-header">
+            <h1>
+                <img src="~/Content/images/shield-pink-logo-wide.png" alt="nflLogo" />
+                NFL Rookie Betting
+            </h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Ranking</a></li>
+                        <li><a href="#">Quiniela</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Iniciar Sesión <span class="caret"></span></a>
+                            <ul id="login" class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            @*Login via
+                                                    <div class="social-buttons">
+                                                        <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                                    </div>*@
+                                            <form class="form" role="form" id="login-nav">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputEmail2">Correo</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correo electrónico" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputPassword2">Contraseña</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contraseña" required>
+                                                    <div class="help-block text-right"><a href="">Olvidaste tu contraseña ?</a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="button" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-xs-12">
+                @RenderBody()
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted">Todos los derechos reservador NFL</p>
+            </div>
+        </footer>
+    </div>
+</div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+    @RenderSection("scripts", false)
+</body>
+</html>

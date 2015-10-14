@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Configuration;
 using System.Web.Http;
 using Effisoft.RookieBetting.Common.Models;
+using Effisoft.RookieBetting.Common.ViewModel;
 using Effisoft.RookieBetting.Infrastructure.Repository;
 
 namespace Effisoft.RookieBetting.Services.Controllers
@@ -19,6 +21,27 @@ namespace Effisoft.RookieBetting.Services.Controllers
         public IEnumerable<Game> GetGames()
         {
             return _gameRepository.GetGames();
+        }
+
+        [Route("weeks")]
+        public IEnumerable<SeasonWeek> GetGameWeeks(int season)
+        {
+            return _gameRepository.GetGameWeeks(season);
+        }
+
+        [Route("seasons")]
+        public IEnumerable<SeasonWeek> GetSeasons()
+        {
+            return _gameRepository.GetAvailableSeasons();
+        }
+
+        [Route("gameresults")]
+        public IEnumerable<GameResult> GetGameResults(int week)
+        {
+            var result = _gameRepository.GetGameResultsByWeek(week);
+            result.ForEach(gr => gr.AwayTeamLogoUrl = ConfigurationManager.AppSettings["NflTeamLogosContainerUrl"] + gr.AwayTeamLogoUrl);
+            result.ForEach(gr => gr.HomeTeamLogoUrl = ConfigurationManager.AppSettings["NflTeamLogosContainerUrl"] + gr.HomeTeamLogoUrl);
+            return result;
         }
 
         [Route("add")]

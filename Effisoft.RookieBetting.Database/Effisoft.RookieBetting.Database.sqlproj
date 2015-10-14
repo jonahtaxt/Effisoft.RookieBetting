@@ -133,6 +133,9 @@
     <Build Include="StoredProcedures\User\GetUserByName.sql" />
     <Build Include="StoredProcedures\Role\GetRoles.sql" />
     <Build Include="StoredProcedures\Role\GetRoleByUser.sql" />
+    <Build Include="StoredProcedures\Game\GetGameWeeks.sql" />
+    <Build Include="StoredProcedures\Game\GetAvailableSeasons.sql" />
+    <Build Include="StoredProcedures\Game\GetGameResultsByWeek.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Effisoft.RookieBetting.Database.refactorlog" />

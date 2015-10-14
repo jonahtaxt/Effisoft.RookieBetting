@@ -1,0 +1,4 @@
+﻿<label class="control-label">Temporada:</label>
+<select class="form-control" ng-options="item.season for item in seasons" ng-model="selectedSeason"></select>
+<label class="control-label" style="margin-left: 2px;">Semana:</label>
+<select class="form-control" id="selSeasonWeeks" ng-options="seasonWeek.week for seasonWeek in seasonWeeks" ng-model="selectedSeasonWeek"></select>
