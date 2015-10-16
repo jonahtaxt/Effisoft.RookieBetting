@@ -69,5 +69,11 @@ namespace Effisoft.RookieBetting.Services.Controllers
         {
             return _teamRepository.GetTeamStats(teamName);
         }
+
+        [Route("divisionstats")]
+        public List<TeamStats> GetDivisionStats(int divisionId)
+        {
+            return _teamRepository.GetStatsByDivision(divisionId);
+        }
     }
 }

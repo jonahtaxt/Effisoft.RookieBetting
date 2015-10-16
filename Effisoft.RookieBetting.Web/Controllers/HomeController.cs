@@ -11,7 +11,17 @@ namespace Effisoft.RookieBetting.Web.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            return PartialView();
+        }
+
+        public ActionResult WeekGames()
+        {
+            return PartialView();
+        }
+
+        public ActionResult Stats()
+        {
+            return PartialView();
         }
     }
 }

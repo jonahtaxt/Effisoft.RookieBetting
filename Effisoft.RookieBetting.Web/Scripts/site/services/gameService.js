@@ -7,8 +7,7 @@
             var request = $http({
                 method: 'get',
                 cache: false,
-                url: getGameWeeksUrl,
-                data: { Season: season }
+                url: getGameWeeksUrl + '?season=' + season
             });
             return request.then(ajaxService.handleAjaxSuccess, ajaxService.handleAjaxError);
         }
@@ -22,9 +21,19 @@
             return request.then(ajaxService.handleAjaxSuccess, ajaxService.handleAjaxError);
         }
 
+        function getWeekGameResults(week) {
+            var request = $http({
+                method: 'get',
+                cache: false,
+                url: getGameWeekResultsUrl + '?week=' + week
+            });
+            return request.then(ajaxService.handleAjaxSuccess, ajaxService.handleAjaxError);
+        }
+
         return ({
             getGameWeeks: getGameWeeks,
-            getAvailableSeasons: getAvailableSeasons
+            getAvailableSeasons: getAvailableSeasons,
+            getWeekGameResults: getWeekGameResults
         });
     }
     ]);

@@ -1,0 +1,19 @@
+﻿<table class="table table-bordered table-hover table-condensed" ng-repeat="division in divisions">
+    <tr>
+        <td colspan="4">
+            {{division.divisionName}}
+        </td>
+    </tr>
+    <tr>
+        <td>Equipo</td>
+        <td>Ganados</td>
+        <td>Perdidos</td>
+        <td>Empatados</td>
+    </tr>
+    <tr ng-repeat="teamStats in division.teams">
+        <td>{{teamStats.teamName}}</td>
+        <td>{{teamStats.wins}}</td>
+        <td>{{teamStats.losses}}</td>
+        <td>{{teamStats.ties}}</td>
+    </tr>
+</table>

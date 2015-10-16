@@ -1,0 +1,24 @@
+﻿<div class="col-xs-12 col-lg-4" ng-repeat="game in weekGameResults">
+    <div class="gameInfo">
+        <div class="row">
+            <div class="col-xs-12">
+                <span class="gameDate">Fecha: {{game.gameDate}}</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5">
+                <img ng-src="{{game.awayTeamLogoUrl}}" alt="{{game.awayTeamName}}" />
+                <div>{{game.awayTeamName}}</div>
+                <div ng-class="{true: 'winnerTeam'}[game.homeScore < game.awayScore]">{{game.awayScore}}</div>
+            </div>
+            <div class="col-xs-2">
+                <div class="gameVs">VS</div>
+            </div>
+            <div class="col-xs-5" style="padding-left: 0">
+                <img ng-src="{{game.homeTeamLogoUrl}}" alt="{{game.homeTeamName}}" />
+                <div>{{game.homeTeamName}}</div>
+                <div ng-class="{true: 'winnerTeam'}[game.homeScore > game.awayScore]">{{game.homeScore}}</div>
+            </div>
+        </div>
+    </div>
+</div>

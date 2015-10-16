@@ -2,6 +2,8 @@
 	AS  SELECT t.TeamId,
 	           t.TeamName,
 			   t.TeamCode,
+			   d.DivisionId,
+			   d.DivisionName,
 			   g.Season,
 			   SUM(CASE WHEN (CASE (CASE t.TeamId
 						WHEN g.HomeTeamId THEN 1
@@ -52,9 +54,14 @@
 		INNER JOIN
 			dbo.Game g
 		ON     (g.HomeTeamId = t.TeamId OR g.AwayTeamId = t.TeamId)
+		INNER JOIN
+			dbo.Division d
+		ON     (d.DivisionId = t.DivisionId)
 		WHERE g.Season = 2015
 		AND   g.GameDate <= GETDATE()
 		GROUP BY t.TeamId,
 		         t.TeamName,
 				 t.TeamCode,
+				 d.DivisionId,
+				 d.DivisionName,
 				 g.Season

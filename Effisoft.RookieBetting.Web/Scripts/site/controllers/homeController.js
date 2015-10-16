@@ -1,8 +1,7 @@
-﻿(function() {
+﻿(function () {
     'use strict';
 
     function homeController($scope) {
-        $scope.test = 'Testing';
         $scope.seasons = [];
         $scope.selectedSeason = null;
         $scope.seasonWeeks = [];

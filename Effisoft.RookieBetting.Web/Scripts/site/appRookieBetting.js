@@ -1,9 +1,31 @@
 ﻿(function () {
     'use strict';
 
-    var msgGenericError = "Ocurrió un error"
+    var msgGenericError = "Ocurrió un error";
 
-    angular.module('appRookieBetting', []);
+    angular.module('appRookieBetting', ['ngRoute']);
+
+    angular.module('appRookieBetting').config(['$routeProvider', '$locationProvider',
+  function ($routeProvider, $locationProvider) {
+      $routeProvider
+          .when('/', {
+            templateUrl: '/Home/WeekGames',
+            controller: "weekGameController"
+          })
+          .when('/home', {
+              templateUrl: '/Home/WeekGames',
+              controller: "weekGameController"
+          })
+          .when('/stats', {
+              templateUrl: '/Home/Stats',
+              controller: "statsController"
+          });
+
+      $locationProvider.html5Mode({
+          enabled: true,
+          requireBase: false
+      });
+  }]);
 
     angular.module("appRookieBetting").factory("ajaxService", [
     "$q", "$window", function ($q, $window) {

@@ -10,7 +10,7 @@
                     $(document).ready(function () {
 
                         angular.element(element[0].children.selSeasonWeeks).on('change', function () {
-                            $rootScope.$broadcast = 'seasonWeekSelected';
+                            $rootScope.$broadcast('seasonWeekSelected', { week: scope.selectedSeasonWeek.week });
                         });
 
                         gameService.getAvailableSeasons(0).then(function (data) {
@@ -21,7 +21,7 @@
                             gameService.getGameWeeks(scope.selectedSeason.season).then(function (data) {
                                 scope.seasonWeeks = [].concat(data);
                                 scope.selectedSeasonWeek = scope.seasonWeeks[0];
-                                $rootScope.$broadcast = 'seasonWeekSelected';
+                                $rootScope.$broadcast('seasonWeekSelected', { week: scope.selectedSeasonWeek.week });
                             });
                         });
 

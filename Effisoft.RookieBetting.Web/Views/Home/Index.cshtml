@@ -3,26 +3,16 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var baseUrl = ConfigurationManager.AppSettings["ServicesUrl"];
 }
-
-<div class="panel panel-primary">
-    <div class="panel-heading clearfix">
-        <span class="panel-title" style="font-size: 24px;">Juegos de la Semana</span>
-        <div class="btn-group pull-right">
-            <div class="form-inline" eff-available-seasons>
-            </div>
-        </div>
-    </div>
-    <div class="panel-body">
-        <div class="row">
-        </div>
-    </div>
-</div>
 
 @section scripts{
     <script type="text/javascript">
-        var getGameWeeksUrl = '@string.Format("{0}{1}",ConfigurationManager.AppSettings["ServicesUrl"], "game/weeks?season=0")';
-        var getAvailableSeasonsUrl = '@string.Format("{0}{1}", ConfigurationManager.AppSettings["ServicesUrl"], "game/seasons")';
+        var getGameWeeksUrl = '@string.Format("{0}{1}", baseUrl, "game/weeks")';
+        var getAvailableSeasonsUrl = '@string.Format("{0}{1}", baseUrl, "game/seasons")';
+        var getGameWeekResultsUrl = '@string.Format("{0}{1}", baseUrl, "game/gameresults")';
+        var getDivisionsUrl = '@string.Format("{0}{1}", baseUrl, "division")';
+        var getDivisionStatsUrl = '@string.Format("{0}{1}", baseUrl, "team/divisionstats")';
     </script>
     @Scripts.Render("~/bundles/home/index")
 }

@@ -136,6 +136,7 @@
     <Build Include="StoredProcedures\Game\GetGameWeeks.sql" />
     <Build Include="StoredProcedures\Game\GetAvailableSeasons.sql" />
     <Build Include="StoredProcedures\Game\GetGameResultsByWeek.sql" />
+    <Build Include="StoredProcedures\Team\GetStatsByDivision.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Effisoft.RookieBetting.Database.refactorlog" />

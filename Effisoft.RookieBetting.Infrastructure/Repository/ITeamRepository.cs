@@ -15,5 +15,6 @@ namespace Effisoft.RookieBetting.Infrastructure.Repository
         Team GetTeam(string teamName);
         TeamStats GetTeamStats(int teamId);
         TeamStats GetTeamStats(string teamName);
+        List<TeamStats> GetStatsByDivision(int divisionId);
     }
 }

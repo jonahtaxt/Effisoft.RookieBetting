@@ -82,5 +82,13 @@ namespace Effisoft.RookieBetting.SqlDataAccess
             return DatabaseContext.ExecuteQuery<TeamStats>("SELECT * FROM dbo.vStats WHERE TeamName = @TeamName",
                 new { TeamName = teamName });
         }
+
+        public List<TeamStats> GetStatsByDivision(int divisionId)
+        {
+            return DatabaseContext.ExecuteProcedure<List<TeamStats>>("GetStatsByDivision", new
+            {
+                DivisionId = divisionId
+            });
+        }
     }
 }
